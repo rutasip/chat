@@ -1,6 +1,6 @@
 {
-  "$access_token": "EAAFPOFJ4w5UBAEqIiivJScIi2bF2sVugpzgtJAznay4oRhd3MKsJqegZAajlbKG6DHzdM4ZBw3mFA474unsVVUlRRlfY5Smx9taNNzZB9sHPXVLsWilUwlyzERQZAvrSN6VvUkFByh5rtUEg5p3WO49HOmmzoyssaho7kZATlalXHE66OKdrE",
-  "$verify_token": "TOKEN",
-  "$appId": "368578297119637",
-  "$appSecret": "350ea9f38dcb2813136be10ec1bfadcf"
+  "access_token": "EAAFPOFJ4w5UBAEqIiivJScIi2bF2sVugpzgtJAznay4oRhd3MKsJqegZAajlbKG6DHzdM4ZBw3mFA474unsVVUlRRlfY5Smx9taNNzZB9sHPXVLsWilUwlyzERQZAvrSN6VvUkFByh5rtUEg5p3WO49HOmmzoyssaho7kZATlalXHE66OKdrE",
+  "verify_token": "TOKEN",
+  "app_id": "368578297119637",
+  "app_secret": "350ea9f38dcb2813136be10ec1bfadcf"
 }
