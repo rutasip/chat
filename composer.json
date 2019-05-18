@@ -1,0 +1,13 @@
+{
+  "name": "paysera/app-chat-bot-workshop",
+  "description": "A simple chat bot Workshop",
+  "type": "project",
+  "autoload": {
+    "psr-4": {
+      "": "src/"
+    }
+  },
+  "require": {
+    "facebook/graph-sdk": "^5.6"
+  }
+}
