@@ -17,7 +17,7 @@ class ConfigProvider
     {
         $config = $this->parseConfig();
         if (!isset($config[$parameter])) {
-            throw new Exception(sprintf('Config parameter %s does not exist', $param))
+            throw new Exception(sprintf('Config parameter %s does not exist', $parameter));
         }
         return $config[$parameter];
     }

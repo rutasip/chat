@@ -7,10 +7,21 @@ namespace Composer\Autoload;
 class ComposerStaticInit21fd372a4baba1533ca60a9997c841af
 {
     public static $files = array (
+        'ad155f8f1cf0d418fe49e248db8c661b' => __DIR__ . '/..' . '/react/promise/src/functions_include.php',
         'c65d09b6820da036953a371c8c73a9b1' => __DIR__ . '/..' . '/facebook/graph-sdk/src/Facebook/polyfills.php',
     );
 
     public static $prefixLengthsPsr4 = array (
+        'R' => 
+        array (
+            'React\\Promise\\' => 14,
+        ),
+        'G' => 
+        array (
+            'GuzzleHttp\\Stream\\' => 18,
+            'GuzzleHttp\\Ring\\' => 16,
+            'GuzzleHttp\\' => 11,
+        ),
         'F' => 
         array (
             'Facebook\\' => 9,
@@ -18,10 +29,30 @@ class ComposerStaticInit21fd372a4baba1533ca60a9997c841af
     );
 
     public static $prefixDirsPsr4 = array (
+        'React\\Promise\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/react/promise/src',
+        ),
+        'GuzzleHttp\\Stream\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/guzzlehttp/streams/src',
+        ),
+        'GuzzleHttp\\Ring\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/guzzlehttp/ringphp/src',
+        ),
+        'GuzzleHttp\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/guzzlehttp/guzzle/src',
+        ),
         'Facebook\\' => 
         array (
             0 => __DIR__ . '/..' . '/facebook/graph-sdk/src/Facebook',
         ),
+    );
+
+    public static $fallbackDirsPsr4 = array (
+        0 => __DIR__ . '/../..' . '/src',
     );
 
     public static function getInitializer(ClassLoader $loader)
@@ -29,6 +60,7 @@ class ComposerStaticInit21fd372a4baba1533ca60a9997c841af
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInit21fd372a4baba1533ca60a9997c841af::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInit21fd372a4baba1533ca60a9997c841af::$prefixDirsPsr4;
+            $loader->fallbackDirsPsr4 = ComposerStaticInit21fd372a4baba1533ca60a9997c841af::$fallbackDirsPsr4;
 
         }, null, ClassLoader::class);
     }
